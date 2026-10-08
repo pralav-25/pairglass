@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose an improvement with a concrete evaluation workflow.
+title: "Feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What task are you trying to complete?
+      description: Describe your evaluation workflow and where Pairglass falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Show the input, command or report behavior that would help.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Small example
+      description: A synthetic export, expected result or sketch makes the proposal easier to assess.
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions and alternatives
+      description: For a statistical method, explain the outcome type, case independence or clustering, and a primary reference. Mention a workaround if one exists.

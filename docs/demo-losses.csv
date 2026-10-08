@@ -1,0 +1,13 @@
+id,baseline_pass,candidate_pass,language,task,baseline_note,candidate_note
+hi-001,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-002,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section
+hi-003,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-004,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section
+hi-005,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-006,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section
+hi-007,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-008,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section
+hi-009,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-010,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section
+hi-011,1,0,hi,retrieval,Expected policy section retrieved,Retrieved the wrong policy section
+hi-012,1,0,hi,reasoning,Expected policy section retrieved,Retrieved the wrong policy section

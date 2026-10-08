@@ -1,0 +1,6 @@
+docs/index.html linguist-generated=true
+docs/demo.json linguist-generated=true
+docs/report.md linguist-generated=true
+docs/demo-losses.csv linguist-generated=true
+src/pairglass/data/*.csv linguist-generated=true
+examples/*.csv linguist-generated=true

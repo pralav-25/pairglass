@@ -1,0 +1,401 @@
+id,passed,language,task,cost_usd,latency_ms,note
+en-001,1,en,retrieval,0.0040,800,Synthetic benchmark case
+en-002,1,en,reasoning,0.0040,801,Synthetic benchmark case
+en-003,1,en,retrieval,0.0040,802,Synthetic benchmark case
+en-004,1,en,reasoning,0.0040,803,Synthetic benchmark case
+en-005,1,en,retrieval,0.0040,804,Synthetic benchmark case
+en-006,1,en,reasoning,0.0040,805,Synthetic benchmark case
+en-007,1,en,retrieval,0.0040,806,Synthetic benchmark case
+en-008,1,en,reasoning,0.0040,807,Synthetic benchmark case
+en-009,1,en,retrieval,0.0040,808,Synthetic benchmark case
+en-010,1,en,reasoning,0.0040,809,Synthetic benchmark case
+en-011,1,en,retrieval,0.0040,810,Synthetic benchmark case
+en-012,1,en,reasoning,0.0040,811,Synthetic benchmark case
+en-013,1,en,retrieval,0.0040,812,Synthetic benchmark case
+en-014,1,en,reasoning,0.0040,813,Synthetic benchmark case
+en-015,1,en,retrieval,0.0040,814,Synthetic benchmark case
+en-016,1,en,reasoning,0.0040,815,Synthetic benchmark case
+en-017,1,en,retrieval,0.0040,816,Synthetic benchmark case
+en-018,1,en,reasoning,0.0040,817,Synthetic benchmark case
+en-019,1,en,retrieval,0.0040,818,Synthetic benchmark case
+en-020,1,en,reasoning,0.0040,819,Synthetic benchmark case
+en-021,1,en,retrieval,0.0040,820,Synthetic benchmark case
+en-022,1,en,reasoning,0.0040,821,Synthetic benchmark case
+en-023,1,en,retrieval,0.0040,822,Synthetic benchmark case
+en-024,1,en,reasoning,0.0040,823,Synthetic benchmark case
+en-025,1,en,retrieval,0.0040,824,Synthetic benchmark case
+en-026,1,en,reasoning,0.0040,825,Synthetic benchmark case
+en-027,1,en,retrieval,0.0040,826,Synthetic benchmark case
+en-028,1,en,reasoning,0.0040,827,Synthetic benchmark case
+en-029,1,en,retrieval,0.0040,828,Synthetic benchmark case
+en-030,1,en,reasoning,0.0040,829,Synthetic benchmark case
+en-031,1,en,retrieval,0.0040,830,Synthetic benchmark case
+en-032,1,en,reasoning,0.0040,831,Synthetic benchmark case
+en-033,1,en,retrieval,0.0040,832,Synthetic benchmark case
+en-034,1,en,reasoning,0.0040,833,Synthetic benchmark case
+en-035,1,en,retrieval,0.0040,834,Synthetic benchmark case
+en-036,1,en,reasoning,0.0040,835,Synthetic benchmark case
+en-037,1,en,retrieval,0.0040,836,Synthetic benchmark case
+en-038,1,en,reasoning,0.0040,837,Synthetic benchmark case
+en-039,1,en,retrieval,0.0040,838,Synthetic benchmark case
+en-040,1,en,reasoning,0.0040,839,Synthetic benchmark case
+en-041,1,en,retrieval,0.0040,840,Synthetic benchmark case
+en-042,1,en,reasoning,0.0040,841,Synthetic benchmark case
+en-043,1,en,retrieval,0.0040,842,Synthetic benchmark case
+en-044,1,en,reasoning,0.0040,843,Synthetic benchmark case
+en-045,1,en,retrieval,0.0040,844,Synthetic benchmark case
+en-046,1,en,reasoning,0.0040,845,Synthetic benchmark case
+en-047,1,en,retrieval,0.0040,846,Synthetic benchmark case
+en-048,1,en,reasoning,0.0040,847,Synthetic benchmark case
+en-049,1,en,retrieval,0.0040,848,Synthetic benchmark case
+en-050,1,en,reasoning,0.0040,849,Synthetic benchmark case
+en-051,1,en,retrieval,0.0040,850,Synthetic benchmark case
+en-052,1,en,reasoning,0.0040,851,Synthetic benchmark case
+en-053,1,en,retrieval,0.0040,852,Synthetic benchmark case
+en-054,1,en,reasoning,0.0040,853,Synthetic benchmark case
+en-055,1,en,retrieval,0.0040,854,Synthetic benchmark case
+en-056,1,en,reasoning,0.0040,855,Synthetic benchmark case
+en-057,1,en,retrieval,0.0040,856,Synthetic benchmark case
+en-058,1,en,reasoning,0.0040,857,Synthetic benchmark case
+en-059,1,en,retrieval,0.0040,858,Synthetic benchmark case
+en-060,1,en,reasoning,0.0040,859,Synthetic benchmark case
+en-061,1,en,retrieval,0.0040,860,Synthetic benchmark case
+en-062,1,en,reasoning,0.0040,861,Synthetic benchmark case
+en-063,1,en,retrieval,0.0040,862,Synthetic benchmark case
+en-064,1,en,reasoning,0.0040,863,Synthetic benchmark case
+en-065,1,en,retrieval,0.0040,864,Synthetic benchmark case
+en-066,1,en,reasoning,0.0040,865,Synthetic benchmark case
+en-067,1,en,retrieval,0.0040,866,Synthetic benchmark case
+en-068,1,en,reasoning,0.0040,867,Synthetic benchmark case
+en-069,1,en,retrieval,0.0040,868,Synthetic benchmark case
+en-070,1,en,reasoning,0.0040,869,Synthetic benchmark case
+en-071,1,en,retrieval,0.0040,870,Synthetic benchmark case
+en-072,1,en,reasoning,0.0040,871,Synthetic benchmark case
+en-073,1,en,retrieval,0.0040,872,Synthetic benchmark case
+en-074,1,en,reasoning,0.0040,873,Synthetic benchmark case
+en-075,1,en,retrieval,0.0040,874,Synthetic benchmark case
+en-076,1,en,reasoning,0.0040,875,Synthetic benchmark case
+en-077,1,en,retrieval,0.0040,876,Synthetic benchmark case
+en-078,1,en,reasoning,0.0040,877,Synthetic benchmark case
+en-079,1,en,retrieval,0.0040,878,Synthetic benchmark case
+en-080,1,en,reasoning,0.0040,879,Synthetic benchmark case
+en-081,1,en,retrieval,0.0040,880,Synthetic benchmark case
+en-082,1,en,reasoning,0.0040,881,Synthetic benchmark case
+en-083,1,en,retrieval,0.0040,882,Synthetic benchmark case
+en-084,1,en,reasoning,0.0040,883,Synthetic benchmark case
+en-085,1,en,retrieval,0.0040,884,Synthetic benchmark case
+en-086,1,en,reasoning,0.0040,885,Synthetic benchmark case
+en-087,1,en,retrieval,0.0040,886,Synthetic benchmark case
+en-088,1,en,reasoning,0.0040,887,Synthetic benchmark case
+en-089,1,en,retrieval,0.0040,888,Synthetic benchmark case
+en-090,1,en,reasoning,0.0040,889,Synthetic benchmark case
+en-091,1,en,retrieval,0.0040,890,Synthetic benchmark case
+en-092,1,en,reasoning,0.0040,891,Synthetic benchmark case
+en-093,1,en,retrieval,0.0040,892,Synthetic benchmark case
+en-094,1,en,reasoning,0.0040,893,Synthetic benchmark case
+en-095,1,en,retrieval,0.0040,894,Synthetic benchmark case
+en-096,1,en,reasoning,0.0040,895,Synthetic benchmark case
+en-097,1,en,retrieval,0.0040,896,Synthetic benchmark case
+en-098,1,en,reasoning,0.0040,897,Synthetic benchmark case
+en-099,1,en,retrieval,0.0040,898,Synthetic benchmark case
+en-100,1,en,reasoning,0.0040,899,Synthetic benchmark case
+en-101,1,en,retrieval,0.0040,900,Synthetic benchmark case
+en-102,1,en,reasoning,0.0040,901,Synthetic benchmark case
+en-103,1,en,retrieval,0.0040,902,Synthetic benchmark case
+en-104,1,en,reasoning,0.0040,903,Synthetic benchmark case
+en-105,1,en,retrieval,0.0040,904,Synthetic benchmark case
+en-106,1,en,reasoning,0.0040,905,Synthetic benchmark case
+en-107,1,en,retrieval,0.0040,906,Synthetic benchmark case
+en-108,1,en,reasoning,0.0040,907,Synthetic benchmark case
+en-109,1,en,retrieval,0.0040,908,Synthetic benchmark case
+en-110,1,en,reasoning,0.0040,909,Synthetic benchmark case
+en-111,1,en,retrieval,0.0040,910,Synthetic benchmark case
+en-112,1,en,reasoning,0.0040,911,Synthetic benchmark case
+en-113,1,en,retrieval,0.0040,912,Synthetic benchmark case
+en-114,1,en,reasoning,0.0040,913,Synthetic benchmark case
+en-115,1,en,retrieval,0.0040,914,Synthetic benchmark case
+en-116,1,en,reasoning,0.0040,915,Synthetic benchmark case
+en-117,1,en,retrieval,0.0040,916,Synthetic benchmark case
+en-118,1,en,reasoning,0.0040,917,Synthetic benchmark case
+en-119,1,en,retrieval,0.0040,918,Synthetic benchmark case
+en-120,1,en,reasoning,0.0040,919,Synthetic benchmark case
+en-121,1,en,retrieval,0.0040,800,Synthetic benchmark case
+en-122,1,en,reasoning,0.0040,801,Synthetic benchmark case
+en-123,1,en,retrieval,0.0040,802,Synthetic benchmark case
+en-124,1,en,reasoning,0.0040,803,Synthetic benchmark case
+en-125,1,en,retrieval,0.0040,804,Synthetic benchmark case
+en-126,1,en,reasoning,0.0040,805,Synthetic benchmark case
+en-127,1,en,retrieval,0.0040,806,Synthetic benchmark case
+en-128,1,en,reasoning,0.0040,807,Synthetic benchmark case
+en-129,1,en,retrieval,0.0040,808,Synthetic benchmark case
+en-130,1,en,reasoning,0.0040,809,Synthetic benchmark case
+en-131,1,en,retrieval,0.0040,810,Synthetic benchmark case
+en-132,1,en,reasoning,0.0040,811,Synthetic benchmark case
+en-133,1,en,retrieval,0.0040,812,Synthetic benchmark case
+en-134,1,en,reasoning,0.0040,813,Synthetic benchmark case
+en-135,1,en,retrieval,0.0040,814,Synthetic benchmark case
+en-136,1,en,reasoning,0.0040,815,Synthetic benchmark case
+en-137,1,en,retrieval,0.0040,816,Synthetic benchmark case
+en-138,1,en,reasoning,0.0040,817,Synthetic benchmark case
+en-139,1,en,retrieval,0.0040,818,Synthetic benchmark case
+en-140,1,en,reasoning,0.0040,819,Synthetic benchmark case
+en-141,1,en,retrieval,0.0040,820,Synthetic benchmark case
+en-142,1,en,reasoning,0.0040,821,Synthetic benchmark case
+en-143,1,en,retrieval,0.0040,822,Synthetic benchmark case
+en-144,1,en,reasoning,0.0040,823,Synthetic benchmark case
+en-145,1,en,retrieval,0.0040,824,Synthetic benchmark case
+en-146,1,en,reasoning,0.0040,825,Synthetic benchmark case
+en-147,1,en,retrieval,0.0040,826,Synthetic benchmark case
+en-148,1,en,reasoning,0.0040,827,Synthetic benchmark case
+en-149,1,en,retrieval,0.0040,828,Synthetic benchmark case
+en-150,1,en,reasoning,0.0040,829,Synthetic benchmark case
+en-151,1,en,retrieval,0.0040,830,Synthetic benchmark case
+en-152,1,en,reasoning,0.0040,831,Synthetic benchmark case
+en-153,1,en,retrieval,0.0040,832,Synthetic benchmark case
+en-154,1,en,reasoning,0.0040,833,Synthetic benchmark case
+en-155,1,en,retrieval,0.0040,834,Synthetic benchmark case
+en-156,1,en,reasoning,0.0040,835,Synthetic benchmark case
+en-157,1,en,retrieval,0.0040,836,Synthetic benchmark case
+en-158,1,en,reasoning,0.0040,837,Synthetic benchmark case
+en-159,1,en,retrieval,0.0040,838,Synthetic benchmark case
+en-160,1,en,reasoning,0.0040,839,Synthetic benchmark case
+en-161,1,en,retrieval,0.0040,840,Synthetic benchmark case
+en-162,1,en,reasoning,0.0040,841,Synthetic benchmark case
+en-163,1,en,retrieval,0.0040,842,Synthetic benchmark case
+en-164,1,en,reasoning,0.0040,843,Synthetic benchmark case
+en-165,1,en,retrieval,0.0040,844,Synthetic benchmark case
+en-166,1,en,reasoning,0.0040,845,Synthetic benchmark case
+en-167,1,en,retrieval,0.0040,846,Synthetic benchmark case
+en-168,1,en,reasoning,0.0040,847,Synthetic benchmark case
+en-169,1,en,retrieval,0.0040,848,Synthetic benchmark case
+en-170,1,en,reasoning,0.0040,849,Synthetic benchmark case
+en-171,1,en,retrieval,0.0040,850,Synthetic benchmark case
+en-172,1,en,reasoning,0.0040,851,Synthetic benchmark case
+en-173,1,en,retrieval,0.0040,852,Synthetic benchmark case
+en-174,1,en,reasoning,0.0040,853,Synthetic benchmark case
+en-175,1,en,retrieval,0.0040,854,Synthetic benchmark case
+en-176,1,en,reasoning,0.0040,855,Synthetic benchmark case
+en-177,1,en,retrieval,0.0040,856,Synthetic benchmark case
+en-178,1,en,reasoning,0.0040,857,Synthetic benchmark case
+en-179,1,en,retrieval,0.0040,858,Synthetic benchmark case
+en-180,1,en,reasoning,0.0040,859,Synthetic benchmark case
+en-181,1,en,retrieval,0.0040,860,Synthetic benchmark case
+en-182,1,en,reasoning,0.0040,861,Synthetic benchmark case
+en-183,1,en,retrieval,0.0040,862,Synthetic benchmark case
+en-184,1,en,reasoning,0.0040,863,Synthetic benchmark case
+en-185,1,en,retrieval,0.0040,864,Synthetic benchmark case
+en-186,1,en,reasoning,0.0040,865,Synthetic benchmark case
+en-187,1,en,retrieval,0.0040,866,Synthetic benchmark case
+en-188,1,en,reasoning,0.0040,867,Synthetic benchmark case
+en-189,1,en,retrieval,0.0040,868,Synthetic benchmark case
+en-190,1,en,reasoning,0.0040,869,Synthetic benchmark case
+en-191,1,en,retrieval,0.0040,870,Synthetic benchmark case
+en-192,1,en,reasoning,0.0040,871,Synthetic benchmark case
+en-193,1,en,retrieval,0.0040,872,Synthetic benchmark case
+en-194,1,en,reasoning,0.0040,873,Synthetic benchmark case
+en-195,1,en,retrieval,0.0040,874,Synthetic benchmark case
+en-196,1,en,reasoning,0.0040,875,Synthetic benchmark case
+en-197,1,en,retrieval,0.0040,876,Synthetic benchmark case
+en-198,1,en,reasoning,0.0040,877,Synthetic benchmark case
+en-199,1,en,retrieval,0.0040,878,Synthetic benchmark case
+en-200,1,en,reasoning,0.0040,879,Synthetic benchmark case
+en-201,1,en,retrieval,0.0040,880,Synthetic benchmark case
+en-202,1,en,reasoning,0.0040,881,Synthetic benchmark case
+en-203,1,en,retrieval,0.0040,882,Synthetic benchmark case
+en-204,1,en,reasoning,0.0040,883,Synthetic benchmark case
+en-205,1,en,retrieval,0.0040,884,Synthetic benchmark case
+en-206,1,en,reasoning,0.0040,885,Synthetic benchmark case
+en-207,1,en,retrieval,0.0040,886,Synthetic benchmark case
+en-208,1,en,reasoning,0.0040,887,Synthetic benchmark case
+en-209,1,en,retrieval,0.0040,888,Synthetic benchmark case
+en-210,1,en,reasoning,0.0040,889,Synthetic benchmark case
+en-211,1,en,retrieval,0.0040,890,Synthetic benchmark case
+en-212,1,en,reasoning,0.0040,891,Synthetic benchmark case
+en-213,1,en,retrieval,0.0040,892,Synthetic benchmark case
+en-214,1,en,reasoning,0.0040,893,Synthetic benchmark case
+en-215,1,en,retrieval,0.0040,894,Synthetic benchmark case
+en-216,1,en,reasoning,0.0040,895,Synthetic benchmark case
+en-217,1,en,retrieval,0.0040,896,Synthetic benchmark case
+en-218,1,en,reasoning,0.0040,897,Synthetic benchmark case
+en-219,1,en,retrieval,0.0040,898,Synthetic benchmark case
+en-220,1,en,reasoning,0.0040,899,Synthetic benchmark case
+en-221,1,en,retrieval,0.0040,900,Synthetic benchmark case
+en-222,1,en,reasoning,0.0040,901,Synthetic benchmark case
+en-223,1,en,retrieval,0.0040,902,Synthetic benchmark case
+en-224,1,en,reasoning,0.0040,903,Synthetic benchmark case
+en-225,1,en,retrieval,0.0040,904,Synthetic benchmark case
+en-226,1,en,reasoning,0.0040,905,Synthetic benchmark case
+en-227,1,en,retrieval,0.0040,906,Synthetic benchmark case
+en-228,1,en,reasoning,0.0040,907,Synthetic benchmark case
+en-229,1,en,retrieval,0.0040,908,Synthetic benchmark case
+en-230,1,en,reasoning,0.0040,909,Synthetic benchmark case
+en-231,1,en,retrieval,0.0040,910,Synthetic benchmark case
+en-232,1,en,reasoning,0.0040,911,Synthetic benchmark case
+en-233,1,en,retrieval,0.0040,912,Synthetic benchmark case
+en-234,1,en,reasoning,0.0040,913,Synthetic benchmark case
+en-235,1,en,retrieval,0.0040,914,Synthetic benchmark case
+en-236,1,en,reasoning,0.0040,915,Synthetic benchmark case
+en-237,1,en,retrieval,0.0040,916,Synthetic benchmark case
+en-238,1,en,reasoning,0.0040,917,Synthetic benchmark case
+en-239,1,en,retrieval,0.0040,918,Synthetic benchmark case
+en-240,1,en,reasoning,0.0040,919,Synthetic benchmark case
+en-241,1,en,retrieval,0.0040,800,Synthetic benchmark case
+en-242,1,en,reasoning,0.0040,801,Synthetic benchmark case
+en-243,1,en,retrieval,0.0040,802,Synthetic benchmark case
+en-244,1,en,reasoning,0.0040,803,Synthetic benchmark case
+en-245,1,en,retrieval,0.0040,804,Synthetic benchmark case
+en-246,1,en,reasoning,0.0040,805,Synthetic benchmark case
+en-247,1,en,retrieval,0.0040,806,Synthetic benchmark case
+en-248,1,en,reasoning,0.0040,807,Synthetic benchmark case
+en-249,1,en,retrieval,0.0040,808,Synthetic benchmark case
+en-250,1,en,reasoning,0.0040,809,Synthetic benchmark case
+en-251,1,en,retrieval,0.0040,810,Synthetic benchmark case
+en-252,1,en,reasoning,0.0040,811,Synthetic benchmark case
+en-253,0,en,retrieval,0.0040,812,Expected answer not found
+en-254,0,en,reasoning,0.0040,813,Expected answer not found
+en-255,0,en,retrieval,0.0040,814,Expected answer not found
+en-256,0,en,reasoning,0.0040,815,Expected answer not found
+en-257,0,en,retrieval,0.0040,816,Expected answer not found
+en-258,0,en,reasoning,0.0040,817,Expected answer not found
+en-259,0,en,retrieval,0.0040,818,Expected answer not found
+en-260,0,en,reasoning,0.0040,819,Expected answer not found
+en-261,0,en,retrieval,0.0040,820,Expected answer not found
+en-262,0,en,reasoning,0.0040,821,Expected answer not found
+en-263,0,en,retrieval,0.0040,822,Expected answer not found
+en-264,0,en,reasoning,0.0040,823,Expected answer not found
+en-265,0,en,retrieval,0.0040,824,Expected answer not found
+en-266,0,en,reasoning,0.0040,825,Expected answer not found
+en-267,0,en,retrieval,0.0040,826,Expected answer not found
+en-268,0,en,reasoning,0.0040,827,Expected answer not found
+en-269,0,en,retrieval,0.0040,828,Expected answer not found
+en-270,0,en,reasoning,0.0040,829,Expected answer not found
+en-271,0,en,retrieval,0.0040,830,Expected answer not found
+en-272,0,en,reasoning,0.0040,831,Expected answer not found
+en-273,0,en,retrieval,0.0040,832,Expected answer not found
+en-274,0,en,reasoning,0.0040,833,Expected answer not found
+en-275,0,en,retrieval,0.0040,834,Expected answer not found
+en-276,0,en,reasoning,0.0040,835,Expected answer not found
+en-277,0,en,retrieval,0.0040,836,Expected answer not found
+en-278,0,en,reasoning,0.0040,837,Expected answer not found
+en-279,0,en,retrieval,0.0040,838,Expected answer not found
+en-280,0,en,reasoning,0.0040,839,Expected answer not found
+en-281,0,en,retrieval,0.0040,840,Expected answer not found
+en-282,0,en,reasoning,0.0040,841,Expected answer not found
+en-283,0,en,retrieval,0.0040,842,Expected answer not found
+en-284,0,en,reasoning,0.0040,843,Expected answer not found
+en-285,0,en,retrieval,0.0040,844,Synthetic benchmark case
+en-286,0,en,reasoning,0.0040,845,Synthetic benchmark case
+en-287,0,en,retrieval,0.0040,846,Synthetic benchmark case
+en-288,0,en,reasoning,0.0040,847,Synthetic benchmark case
+en-289,0,en,retrieval,0.0040,848,Synthetic benchmark case
+en-290,0,en,reasoning,0.0040,849,Synthetic benchmark case
+en-291,0,en,retrieval,0.0040,850,Synthetic benchmark case
+en-292,0,en,reasoning,0.0040,851,Synthetic benchmark case
+en-293,0,en,retrieval,0.0040,852,Synthetic benchmark case
+en-294,0,en,reasoning,0.0040,853,Synthetic benchmark case
+en-295,0,en,retrieval,0.0040,854,Synthetic benchmark case
+en-296,0,en,reasoning,0.0040,855,Synthetic benchmark case
+en-297,0,en,retrieval,0.0040,856,Synthetic benchmark case
+en-298,0,en,reasoning,0.0040,857,Synthetic benchmark case
+en-299,0,en,retrieval,0.0040,858,Synthetic benchmark case
+en-300,0,en,reasoning,0.0040,859,Synthetic benchmark case
+en-301,0,en,retrieval,0.0040,860,Synthetic benchmark case
+en-302,0,en,reasoning,0.0040,861,Synthetic benchmark case
+en-303,0,en,retrieval,0.0040,862,Synthetic benchmark case
+en-304,0,en,reasoning,0.0040,863,Synthetic benchmark case
+en-305,0,en,retrieval,0.0040,864,Synthetic benchmark case
+en-306,0,en,reasoning,0.0040,865,Synthetic benchmark case
+en-307,0,en,retrieval,0.0040,866,Synthetic benchmark case
+en-308,0,en,reasoning,0.0040,867,Synthetic benchmark case
+en-309,0,en,retrieval,0.0040,868,Synthetic benchmark case
+en-310,0,en,reasoning,0.0040,869,Synthetic benchmark case
+en-311,0,en,retrieval,0.0040,870,Synthetic benchmark case
+en-312,0,en,reasoning,0.0040,871,Synthetic benchmark case
+en-313,0,en,retrieval,0.0040,872,Synthetic benchmark case
+en-314,0,en,reasoning,0.0040,873,Synthetic benchmark case
+en-315,0,en,retrieval,0.0040,874,Synthetic benchmark case
+en-316,0,en,reasoning,0.0040,875,Synthetic benchmark case
+en-317,0,en,retrieval,0.0040,876,Synthetic benchmark case
+en-318,0,en,reasoning,0.0040,877,Synthetic benchmark case
+en-319,0,en,retrieval,0.0040,878,Synthetic benchmark case
+en-320,0,en,reasoning,0.0040,879,Synthetic benchmark case
+hi-001,1,hi,retrieval,0.0040,800,Expected policy section retrieved
+hi-002,1,hi,reasoning,0.0040,801,Expected policy section retrieved
+hi-003,1,hi,retrieval,0.0040,802,Expected policy section retrieved
+hi-004,1,hi,reasoning,0.0040,803,Expected policy section retrieved
+hi-005,1,hi,retrieval,0.0040,804,Expected policy section retrieved
+hi-006,1,hi,reasoning,0.0040,805,Expected policy section retrieved
+hi-007,1,hi,retrieval,0.0040,806,Expected policy section retrieved
+hi-008,1,hi,reasoning,0.0040,807,Expected policy section retrieved
+hi-009,1,hi,retrieval,0.0040,808,Expected policy section retrieved
+hi-010,1,hi,reasoning,0.0040,809,Expected policy section retrieved
+hi-011,1,hi,retrieval,0.0040,810,Expected policy section retrieved
+hi-012,1,hi,reasoning,0.0040,811,Expected policy section retrieved
+hi-013,1,hi,retrieval,0.0040,812,Synthetic benchmark case
+hi-014,1,hi,reasoning,0.0040,813,Synthetic benchmark case
+hi-015,1,hi,retrieval,0.0040,814,Synthetic benchmark case
+hi-016,1,hi,reasoning,0.0040,815,Synthetic benchmark case
+hi-017,1,hi,retrieval,0.0040,816,Synthetic benchmark case
+hi-018,1,hi,reasoning,0.0040,817,Synthetic benchmark case
+hi-019,1,hi,retrieval,0.0040,818,Synthetic benchmark case
+hi-020,1,hi,reasoning,0.0040,819,Synthetic benchmark case
+hi-021,1,hi,retrieval,0.0040,820,Synthetic benchmark case
+hi-022,1,hi,reasoning,0.0040,821,Synthetic benchmark case
+hi-023,1,hi,retrieval,0.0040,822,Synthetic benchmark case
+hi-024,1,hi,reasoning,0.0040,823,Synthetic benchmark case
+hi-025,1,hi,retrieval,0.0040,824,Synthetic benchmark case
+hi-026,1,hi,reasoning,0.0040,825,Synthetic benchmark case
+hi-027,1,hi,retrieval,0.0040,826,Synthetic benchmark case
+hi-028,1,hi,reasoning,0.0040,827,Synthetic benchmark case
+hi-029,1,hi,retrieval,0.0040,828,Synthetic benchmark case
+hi-030,1,hi,reasoning,0.0040,829,Synthetic benchmark case
+hi-031,1,hi,retrieval,0.0040,830,Synthetic benchmark case
+hi-032,1,hi,reasoning,0.0040,831,Synthetic benchmark case
+hi-033,1,hi,retrieval,0.0040,832,Synthetic benchmark case
+hi-034,1,hi,reasoning,0.0040,833,Synthetic benchmark case
+hi-035,1,hi,retrieval,0.0040,834,Synthetic benchmark case
+hi-036,1,hi,reasoning,0.0040,835,Synthetic benchmark case
+hi-037,0,hi,retrieval,0.0040,836,Synthetic benchmark case
+hi-038,0,hi,reasoning,0.0040,837,Synthetic benchmark case
+hi-039,0,hi,retrieval,0.0040,838,Synthetic benchmark case
+hi-040,0,hi,reasoning,0.0040,839,Synthetic benchmark case
+es-001,1,es,retrieval,0.0040,800,Synthetic benchmark case
+es-002,1,es,reasoning,0.0040,801,Synthetic benchmark case
+es-003,1,es,retrieval,0.0040,802,Synthetic benchmark case
+es-004,1,es,reasoning,0.0040,803,Synthetic benchmark case
+es-005,1,es,retrieval,0.0040,804,Synthetic benchmark case
+es-006,1,es,reasoning,0.0040,805,Synthetic benchmark case
+es-007,1,es,retrieval,0.0040,806,Synthetic benchmark case
+es-008,1,es,reasoning,0.0040,807,Synthetic benchmark case
+es-009,1,es,retrieval,0.0040,808,Synthetic benchmark case
+es-010,1,es,reasoning,0.0040,809,Synthetic benchmark case
+es-011,1,es,retrieval,0.0040,810,Synthetic benchmark case
+es-012,1,es,reasoning,0.0040,811,Synthetic benchmark case
+es-013,1,es,retrieval,0.0040,812,Synthetic benchmark case
+es-014,1,es,reasoning,0.0040,813,Synthetic benchmark case
+es-015,1,es,retrieval,0.0040,814,Synthetic benchmark case
+es-016,1,es,reasoning,0.0040,815,Synthetic benchmark case
+es-017,1,es,retrieval,0.0040,816,Synthetic benchmark case
+es-018,1,es,reasoning,0.0040,817,Synthetic benchmark case
+es-019,1,es,retrieval,0.0040,818,Synthetic benchmark case
+es-020,1,es,reasoning,0.0040,819,Synthetic benchmark case
+es-021,1,es,retrieval,0.0040,820,Synthetic benchmark case
+es-022,1,es,reasoning,0.0040,821,Synthetic benchmark case
+es-023,1,es,retrieval,0.0040,822,Synthetic benchmark case
+es-024,1,es,reasoning,0.0040,823,Synthetic benchmark case
+es-025,1,es,retrieval,0.0040,824,Synthetic benchmark case
+es-026,1,es,reasoning,0.0040,825,Synthetic benchmark case
+es-027,1,es,retrieval,0.0040,826,Synthetic benchmark case
+es-028,1,es,reasoning,0.0040,827,Synthetic benchmark case
+es-029,1,es,retrieval,0.0040,828,Synthetic benchmark case
+es-030,1,es,reasoning,0.0040,829,Synthetic benchmark case
+es-031,1,es,retrieval,0.0040,830,Synthetic benchmark case
+es-032,1,es,reasoning,0.0040,831,Synthetic benchmark case
+es-033,0,es,retrieval,0.0040,832,Synthetic benchmark case
+es-034,0,es,reasoning,0.0040,833,Synthetic benchmark case
+es-035,0,es,retrieval,0.0040,834,Synthetic benchmark case
+es-036,0,es,reasoning,0.0040,835,Synthetic benchmark case
+es-037,0,es,retrieval,0.0040,836,Synthetic benchmark case
+es-038,0,es,reasoning,0.0040,837,Synthetic benchmark case
+es-039,0,es,retrieval,0.0040,838,Synthetic benchmark case
+es-040,0,es,reasoning,0.0040,839,Synthetic benchmark case

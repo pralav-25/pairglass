@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pairglass-eval"
+version = "0.1.0"
+description = "Reveal evaluation regressions hidden by an overall pass rate."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Pralav Singh"}]
+keywords = ["evaluation", "machine-learning", "regression", "paired-tests", "llm"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/pralav-25/pairglass"
+Demo = "https://pralav-25.github.io/pairglass/"
+Issues = "https://github.com/pralav-25/pairglass/issues"
+
+[project.scripts]
+pairglass = "pairglass.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pairglass = ["templates/*.html", "data/*.csv"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

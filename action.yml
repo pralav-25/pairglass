@@ -1,0 +1,43 @@
+name: Pairglass evaluation audit
+description: Fail when a paired evaluation group regresses; keep offline reports for review.
+author: Pralav Singh
+branding:
+  icon: bar-chart-2
+  color: blue
+inputs:
+  baseline:
+    description: Baseline CSV path relative to the workspace
+    required: true
+  candidate:
+    description: Candidate CSV path relative to the workspace
+    required: true
+  slices:
+    description: Comma-separated slice column names
+    default: ''
+  max-drop:
+    description: Minimum drop as a proportion (0.05 means five percentage points)
+    default: '0.05'
+  min-pairs:
+    description: Minimum paired cases per group
+    default: '20'
+  alpha:
+    description: Maximum Holm-adjusted one-sided p-value
+    default: '0.05'
+  report-dir:
+    description: Destination for HTML, JSON, Markdown and losses CSV
+    default: pairglass-artifacts
+runs:
+  using: composite
+  steps:
+    - name: Audit paired evaluations
+      shell: bash
+      env:
+        PAIRGLASS_ACTION_PATH: ${{ github.action_path }}
+        PAIRGLASS_BASELINE: ${{ inputs.baseline }}
+        PAIRGLASS_CANDIDATE: ${{ inputs.candidate }}
+        PAIRGLASS_SLICES: ${{ inputs.slices }}
+        PAIRGLASS_MAX_DROP: ${{ inputs.max-drop }}
+        PAIRGLASS_MIN_PAIRS: ${{ inputs.min-pairs }}
+        PAIRGLASS_ALPHA: ${{ inputs.alpha }}
+        PAIRGLASS_REPORT_DIR: ${{ inputs.report-dir }}
+      run: python3 "$PAIRGLASS_ACTION_PATH/scripts/run_action.py"
