@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: >-
+  If you use Pairglass in your research, please cite it using this metadata.
+title: Pairglass
+authors:
+  - given-names: Pralav
+    family-names: Singh
+version: 0.1.0
+date-released: 2026-10-15
+license: MIT
+repository-code: https://github.com/pralav-25/pairglass
+type: software
