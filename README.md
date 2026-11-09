@@ -62,6 +62,8 @@ pairglass compare baseline.csv candidate.csv \
 
 Pairglass joins by `id`, so row order may differ. Both files must contain exactly the same IDs, each once, and the selected slice values must match for every paired case. Header names and IDs are trimmed; `passed` tokens are trimmed and case-insensitive. Slice values are preserved exactly, and a blank slice value is an explicit category.
 
+The `--losses` CSV contains `id`, `baseline_pass`, `candidate_pass`, the declared slices as `slice:<column>`, `baseline_note` and `candidate_note`. Slice headers use the same prefix as the HTML case export, so metadata named `baseline_note` or `candidate_pass` stays distinct from evaluation results. Exported text that could be interpreted as a spreadsheet formula receives a leading apostrophe; the JSON report preserves the original values.
+
 Minimal input:
 
 ```csv
