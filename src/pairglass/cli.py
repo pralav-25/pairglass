@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import io
 import json
 import os
 from pathlib import Path
@@ -14,7 +13,7 @@ from importlib.resources import files
 
 from . import __version__
 from .core import compare
-from .report import render_html, render_markdown
+from .report import render_html, render_losses_csv, render_markdown
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -38,28 +37,6 @@ def _parser() -> argparse.ArgumentParser:
         command.add_argument("--alpha", type=float, default=0.05)
         command.add_argument("--fail-on-regression", action="store_true", help="Exit 1 if a supported group meets the regression rule")
     return parser
-
-
-def _safe_cell(value: str) -> str:
-    # A leading apostrophe prevents exported text from becoming a spreadsheet formula.
-    if value.lstrip().startswith(("=", "+", "-", "@")) or value.startswith(("\t", "\r")):
-        return "'" + value
-    return value
-
-
-def _loss_csv(report: dict) -> str:
-    stream = io.StringIO(newline="")
-    writer = csv.writer(stream, lineterminator="\n")
-    slices = report["config"]["slices"]
-    writer.writerow(["id", "baseline_pass", "candidate_pass", *slices, "baseline_note", "candidate_note"])
-    for case in report["cases"]:
-        if case["outcome"] == "loss":
-            writer.writerow([
-                _safe_cell(case["id"]), "1", "0",
-                *[_safe_cell(case["slices"][column]) for column in slices],
-                _safe_cell(case["baseline_note"]), _safe_cell(case["candidate_note"]),
-            ])
-    return stream.getvalue()
 
 
 def _same_file(left: Path, right: Path) -> bool:
@@ -115,7 +92,7 @@ def _run(args: argparse.Namespace, baseline: Path, candidate: Path, slices: list
     if args.markdown_output:
         outputs.append((args.markdown_output, render_markdown(report)))
     if args.losses:
-        outputs.append((args.losses, _loss_csv(report)))
+        outputs.append((args.losses, render_losses_csv(report)))
     _write_reports(outputs, [baseline, candidate])
     summary = report["summary"]
     if args.command == "demo":

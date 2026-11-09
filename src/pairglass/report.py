@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import csv
 import html
+import io
 import json
 import re
 from pathlib import Path
@@ -11,6 +13,37 @@ from typing import Any
 
 _TEMPLATE = Path(__file__).parent / "templates" / "report.html"
 _DECISIONS = {"regression", "watch", "improved", "stable", "insufficient"}
+
+
+def _safe_csv_cell(value: str) -> str:
+    # Quoting alone does not stop a spreadsheet from evaluating a formula.
+    if value.lstrip().startswith(("=", "+", "-", "@")) or value.startswith(("\t", "\r", "\n")):
+        return "'" + value
+    return value
+
+
+def render_losses_csv(report: dict[str, Any]) -> str:
+    """Render pass-to-fail cases with distinct, spreadsheet-safe columns.
+
+    Prefix slice names with ``slice:`` to distinguish user metadata from the
+    fixed outcome and note columns, matching the HTML report's CSV export.
+    """
+    stream = io.StringIO(newline="")
+    # Python 3.10's minimal quoting does not quote CR with an LF terminator.
+    # Quote every field so embedded CR/LF in headers or values stays in a cell.
+    writer = csv.writer(stream, lineterminator="\n", quoting=csv.QUOTE_ALL)
+    slices = report["config"]["slices"]
+    writer.writerow([
+        "id", "baseline_pass", "candidate_pass", *[f"slice:{column}" for column in slices],
+        "baseline_note", "candidate_note",
+    ])
+    for case in report["cases"]:
+        if case["outcome"] == "loss":
+            writer.writerow([_safe_csv_cell(value) for value in (
+                case["id"], "1", "0", *[case["slices"][column] for column in slices],
+                case["baseline_note"], case["candidate_note"],
+            )])
+    return stream.getvalue()
 
 
 def _escape(value: Any) -> str:

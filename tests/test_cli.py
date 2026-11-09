@@ -1,4 +1,5 @@
 import contextlib
+import csv
 import io
 import json
 import os
@@ -99,6 +100,31 @@ class CLITests(unittest.TestCase):
             contents = (root / "losses.csv").read_text()
             self.assertIn("'=1+2", contents)
             self.assertIn("'@SUM(A1)", contents)
+
+    def test_loss_csv_preserves_slice_names_that_conflict_with_export_columns(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            header = ["id", "passed", "baseline_note", "candidate_pass", "=1+2", "note"]
+            for name, passed, note in (("a.csv", "1", "before"), ("b.csv", "0", "after")):
+                with (root / name).open("w", encoding="utf-8", newline="") as handle:
+                    writer = csv.writer(handle)
+                    writer.writerow(header)
+                    writer.writerow(["case", passed, "slice context", "category", "value", note])
+            result, _, err = self.call([
+                "compare", str(root / "a.csv"), str(root / "b.csv"),
+                "-o", str(root / "report.html"), "--losses", str(root / "losses.csv"),
+                "--slice", "baseline_note", "--slice", "candidate_pass", "--slice", "=1+2",
+            ])
+            self.assertEqual(result, 0, err)
+            with (root / "losses.csv").open(encoding="utf-8", newline="") as handle:
+                reader = csv.DictReader(handle)
+                self.assertEqual(len(reader.fieldnames), len(set(reader.fieldnames)))
+                row = next(reader)
+                self.assertEqual(row["baseline_note"], "before")
+                self.assertEqual(row["candidate_pass"], "0")
+                self.assertEqual(row["slice:baseline_note"], "slice context")
+                self.assertEqual(row["slice:candidate_pass"], "category")
+                self.assertEqual(row["slice:=1+2"], "value")
 
 
 if __name__ == "__main__":

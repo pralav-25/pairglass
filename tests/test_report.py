@@ -1,3 +1,5 @@
+import csv
+import io
 import json
 import re
 import tempfile
@@ -6,7 +8,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from unittest.mock import patch
 
-from pairglass.report import render_html, render_markdown
+from pairglass.report import render_html, render_losses_csv, render_markdown
 
 
 class ReportParser(HTMLParser):
@@ -69,6 +71,67 @@ def fixture():
 
 
 class ReportTests(unittest.TestCase):
+    def test_losses_csv_filters_cases_and_round_trips_text(self):
+        report = fixture()
+        report["cases"][0]["baseline_note"] = 'A quoted, multiline "note"\ncontinued'
+        rows = list(csv.DictReader(io.StringIO(render_losses_csv(report))))
+        self.assertEqual(len(rows), 6)
+        self.assertEqual(rows[0]["id"], "case-000")
+        self.assertEqual(rows[-1]["id"], "case-005")
+        self.assertEqual(rows[0]["slice:language"], "hi")
+        self.assertEqual(rows[0]["baseline_note"], 'A quoted, multiline "note"\ncontinued')
+        self.assertEqual(rows[0]["baseline_pass"], "1")
+        self.assertEqual(rows[0]["candidate_pass"], "0")
+
+    def test_losses_csv_escapes_formula_and_control_prefixes(self):
+        for value in ("=1+2", "+cmd", "-1", "@SUM(A1)", "  =1", "\ttext", "\rtext", "\ntext"):
+            with self.subTest(value=value):
+                report = fixture()
+                case = report["cases"][0]
+                case["id"] = value
+                case["slices"]["language"] = value
+                case["baseline_note"] = value
+                case["candidate_note"] = value
+                row = next(csv.DictReader(io.StringIO(render_losses_csv(report))))
+                for column in ("id", "slice:language", "baseline_note", "candidate_note"):
+                    self.assertEqual(row[column], "'" + value)
+                self.assertEqual(case["id"], value)
+                self.assertEqual(case["baseline_note"], value)
+
+    def test_losses_csv_round_trips_embedded_line_endings_in_headers_and_values(self):
+        for ending in ("\r", "\n", "\r\n"):
+            with self.subTest(ending=repr(ending)):
+                report = fixture()
+                column = f"language{ending}region"
+                value = f"hi{ending}north"
+                report["config"]["slices"] = [column]
+                report["cases"] = [report["cases"][0]]
+                case = report["cases"][0]
+                case["id"] = f"case{ending}001"
+                case["slices"] = {column: value}
+                case["baseline_note"] = f"before{ending}detail"
+                case["candidate_note"] = f"after{ending}detail"
+                reader = csv.DictReader(io.StringIO(render_losses_csv(report), newline=""), strict=True)
+                rows = list(reader)
+                self.assertEqual(reader.fieldnames, [
+                    "id", "baseline_pass", "candidate_pass", f"slice:{column}",
+                    "baseline_note", "candidate_note",
+                ])
+                self.assertEqual(rows, [{
+                    "id": case["id"], "baseline_pass": "1", "candidate_pass": "0",
+                    f"slice:{column}": value, "baseline_note": case["baseline_note"],
+                    "candidate_note": case["candidate_note"],
+                }])
+
+    def test_losses_csv_keeps_header_when_no_cases_are_lost(self):
+        report = fixture()
+        report["cases"] = [case for case in report["cases"] if case["outcome"] != "loss"]
+        reader = csv.DictReader(io.StringIO(render_losses_csv(report)))
+        self.assertEqual(reader.fieldnames, [
+            "id", "baseline_pass", "candidate_pass", "slice:language", "baseline_note", "candidate_note",
+        ])
+        self.assertEqual(list(reader), [])
+
     def parsed(self, document):
         parser = ReportParser()
         parser.feed(document)
