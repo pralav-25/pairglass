@@ -29,7 +29,9 @@ def render_losses_csv(report: dict[str, Any]) -> str:
     fixed outcome and note columns, matching the HTML report's CSV export.
     """
     stream = io.StringIO(newline="")
-    writer = csv.writer(stream, lineterminator="\n")
+    # Python 3.10's minimal quoting does not quote CR with an LF terminator.
+    # Quote every field so embedded CR/LF in headers or values stays in a cell.
+    writer = csv.writer(stream, lineterminator="\n", quoting=csv.QUOTE_ALL)
     slices = report["config"]["slices"]
     writer.writerow([
         "id", "baseline_pass", "candidate_pass", *[f"slice:{column}" for column in slices],

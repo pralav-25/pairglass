@@ -98,6 +98,31 @@ class ReportTests(unittest.TestCase):
                 self.assertEqual(case["id"], value)
                 self.assertEqual(case["baseline_note"], value)
 
+    def test_losses_csv_round_trips_embedded_line_endings_in_headers_and_values(self):
+        for ending in ("\r", "\n", "\r\n"):
+            with self.subTest(ending=repr(ending)):
+                report = fixture()
+                column = f"language{ending}region"
+                value = f"hi{ending}north"
+                report["config"]["slices"] = [column]
+                report["cases"] = [report["cases"][0]]
+                case = report["cases"][0]
+                case["id"] = f"case{ending}001"
+                case["slices"] = {column: value}
+                case["baseline_note"] = f"before{ending}detail"
+                case["candidate_note"] = f"after{ending}detail"
+                reader = csv.DictReader(io.StringIO(render_losses_csv(report), newline=""), strict=True)
+                rows = list(reader)
+                self.assertEqual(reader.fieldnames, [
+                    "id", "baseline_pass", "candidate_pass", f"slice:{column}",
+                    "baseline_note", "candidate_note",
+                ])
+                self.assertEqual(rows, [{
+                    "id": case["id"], "baseline_pass": "1", "candidate_pass": "0",
+                    f"slice:{column}": value, "baseline_note": case["baseline_note"],
+                    "candidate_note": case["candidate_note"],
+                }])
+
     def test_losses_csv_keeps_header_when_no_cases_are_lost(self):
         report = fixture()
         report["cases"] = [case for case in report["cases"] if case["outcome"] != "loss"]
